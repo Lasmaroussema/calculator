@@ -1,0 +1,133 @@
+body
+{
+display: flex;
+margin: 0;
+}
+.calculatrice
+{
+    border: 5px solid black;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.calc
+{
+display: grid;
+grid-template-columns: repeat(4,auto) ;
+grid-template-rows: repeat(6,auto) ;
+background-color: white;
+width: fit-content;
+grid-gap: 10px;
+margin-top: 20px;
+}
+.input input
+{
+    width :435px;
+    height: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.plus,.sub,.mul,.div
+{
+width: 100px;
+height: 50px;
+background-color: rgb(153 149 149 / 22%);
+font-weight: bold;
+font-size: 40px;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-area: 1;
+}
+
+.ce
+{
+    grid-area: 2/4/2/4;
+}
+
+.number
+{
+width: 100px;
+height: 50px;
+background-color: white;
+font-weight: bold;
+font-size: 40px;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+border:2px solid black ;
+}
+.egal
+{
+width: 100px;
+background-color: gray;
+font-weight: bold;
+font-size: 40px;
+color:white;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-column-start:4;
+grid-column-end:4 ;
+grid-row-start:3 ;
+grid-row-end: 6;
+}
+
+.cos
+{
+width: 100px;
+background-color: gray;
+font-weight: bold;
+font-size: 40px;
+color:white;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-area: 6;
+}
+
+.sin
+{
+width: 100px;
+background-color: gray;
+font-weight: bold;
+font-size: 40px;
+color:white;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-area: 6;
+grid-column-start: 3;
+}
+.bracket1,.bracket2
+{
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        font-weight: bold;
+        font-size: 40px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+}
+.vir
+{
+grid-area: 6/2/6/2;
+}
+.bracket1
+{
+    grid-area: 5/1/5/1;
+}
+.bracket2
+{
+    grid-area: 5/3/5/3;
+}
